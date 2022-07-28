@@ -1,0 +1,15 @@
+{
+    "name": "React template App",
+    "build": {
+        "dockerfile": "./Dockerfile",
+        "context": ". .",
+        "args": {
+            "VARIANT": "1",
+            "NODE VERSION": "16.15.1"
+        },
+        "remoteUser": "vscode",
+        "remoteEnv": {
+            "PATH": "${containerEnv:PATH}:some/other:value"
+        }
+    }
+}
